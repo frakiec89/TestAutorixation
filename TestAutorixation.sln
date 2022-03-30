@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32228.430
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAutorixation.MyWPF", "TestAutorixation.MyWPF\TestAutorixation.MyWPF.csproj", "{FFC8229D-3D2F-40BC-956F-AC5BF721F2F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAutorixation.Core", "TestAutorixation.Core\TestAutorixation.Core.csproj", "{E2680C67-5274-42DC-91E8-37AE7F9D3593}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FFC8229D-3D2F-40BC-956F-AC5BF721F2F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFC8229D-3D2F-40BC-956F-AC5BF721F2F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFC8229D-3D2F-40BC-956F-AC5BF721F2F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFC8229D-3D2F-40BC-956F-AC5BF721F2F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2680C67-5274-42DC-91E8-37AE7F9D3593}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2680C67-5274-42DC-91E8-37AE7F9D3593}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2680C67-5274-42DC-91E8-37AE7F9D3593}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2680C67-5274-42DC-91E8-37AE7F9D3593}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4874C030-B863-4A3F-8A66-D68F252C37AB}
+	EndGlobalSection
+EndGlobal
