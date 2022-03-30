@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAutorixation.MyWPF", "T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAutorixation.Core", "TestAutorixation.Core\TestAutorixation.Core.csproj", "{E2680C67-5274-42DC-91E8-37AE7F9D3593}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAutorixation.BL", "TestAutorixation.BL\TestAutorixation.BL.csproj", "{621A88B4-63DA-4A79-9ECE-2E0ADEB0CC36}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{E2680C67-5274-42DC-91E8-37AE7F9D3593}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E2680C67-5274-42DC-91E8-37AE7F9D3593}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E2680C67-5274-42DC-91E8-37AE7F9D3593}.Release|Any CPU.Build.0 = Release|Any CPU
+		{621A88B4-63DA-4A79-9ECE-2E0ADEB0CC36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{621A88B4-63DA-4A79-9ECE-2E0ADEB0CC36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{621A88B4-63DA-4A79-9ECE-2E0ADEB0CC36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{621A88B4-63DA-4A79-9ECE-2E0ADEB0CC36}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

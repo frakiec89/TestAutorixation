@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using TestAutorixation.Core;
 
 namespace TestAutorixation.MyWPF
 {
@@ -37,10 +38,12 @@ namespace TestAutorixation.MyWPF
            if ( string.IsNullOrEmpty(tbLogin.Text)
                 || string.IsNullOrEmpty(tbPassword.Text))
             { MessageBox.Show("введите логин  и пароль"); return; }
-                
-           if (IAuthorization.IsLogIn(tbLogin.Text , tbPassword.Text) ==  true )
+
+            IAuthorization authorization = null;// todo не забыть
+
+           if (authorization.IsLogIn(tbLogin.Text , tbPassword.Text) ==  true )
            {
-                var user = IAuthorization.GetUser(tbLogin.Text, tbPassword.Text);
+                var user = authorization.GetUser(tbLogin.Text, tbPassword.Text);
                 MessageBox.Show( $"привет {user.Name }");
 
                 //  продолжение 

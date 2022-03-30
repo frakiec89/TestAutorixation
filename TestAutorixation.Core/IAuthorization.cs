@@ -9,8 +9,8 @@ namespace TestAutorixation.Core
 {
     public interface IAuthorization
     {
-        bool IsLogIn(string login, string password);
-        User GetUser(string login, string password);
+         bool  IsLogIn(string login, string password);
+         User GetUser(string login, string password);
 
     }
 }

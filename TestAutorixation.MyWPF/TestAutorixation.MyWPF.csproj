@@ -7,4 +7,8 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\TestAutorixation.Core\TestAutorixation.Core.csproj" />
+  </ItemGroup>
+
 </Project>
