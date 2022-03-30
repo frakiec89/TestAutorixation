@@ -39,7 +39,7 @@ namespace TestAutorixation.MyWPF
                 || string.IsNullOrEmpty(tbPassword.Text))
             { MessageBox.Show("введите логин  и пароль"); return; }
 
-            IAuthorization authorization = null;// todo не забыть
+            IAuthorization authorization = MyBild.GetAuthorization();
 
            if (authorization.IsLogIn(tbLogin.Text , tbPassword.Text) ==  true )
            {

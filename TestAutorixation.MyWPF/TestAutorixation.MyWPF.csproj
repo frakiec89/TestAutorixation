@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\TestAutorixation.BL\TestAutorixation.BL.csproj" />
     <ProjectReference Include="..\TestAutorixation.Core\TestAutorixation.Core.csproj" />
   </ItemGroup>
 
