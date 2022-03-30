@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\TestAutorixation.Core\TestAutorixation.Core.csproj" />
+    <ProjectReference Include="..\TestAutorixation.MSSQLDB\TestAutorixation.MSSQLDB.csproj" />
   </ItemGroup>
 
 </Project>
