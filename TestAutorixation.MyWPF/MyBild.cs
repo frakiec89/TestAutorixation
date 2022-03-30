@@ -1,6 +1,7 @@
 ﻿using System;
 using TestAutorixation.BL;
 using TestAutorixation.Core;
+using TestAutorixation.MSSQLDB;
 
 namespace TestAutorixation.MyWPF
 {
@@ -8,7 +9,12 @@ namespace TestAutorixation.MyWPF
     {
         internal static IAuthorization GetAuthorization()
         {
-            return new Authorization();
+            return new Authorization(GetUserContoroller());
+        }
+
+        internal static IUserContoroller GetUserContoroller()
+        {
+            return new UserController();
         }
     }
 }

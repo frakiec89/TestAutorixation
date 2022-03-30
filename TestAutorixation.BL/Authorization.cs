@@ -11,22 +11,29 @@ namespace TestAutorixation.BL
 {
     public class Authorization : IAuthorization
     {
-        public Core.Model.User GetUser(string login, string password)
+        private IUserContoroller _userContoroller;
+        public Authorization (IUserContoroller userContoroller)
         {
-            MsContext  msContext = new MsContext();
-            var userDb =  msContext.Users.FirstOrDefault(x => x.Login == login && x.Password == password);
-            return MapUSer(userDb);
+            _userContoroller = userContoroller;
         }
 
-        private Core.Model.User MapUSer(MSSQLDB.User userDb)
+        public Core.Model.User GetUser(string login, string password)
         {
-           return new Core.Model.User { Password =userDb.Password , Login=userDb.Login , Name = userDb.UserName};
+            return _userContoroller.GetUser(login);
         }
 
         public bool IsLogIn(string login, string password)
         {
-            MsContext msContext = new MsContext();
-           return  msContext.Users.Any(x => x.Login == login && x.Password == password);
+            if (_userContoroller.IsLogIn(login) == true)
+            {
+                var us = _userContoroller.GetUser(login);
+                if(us.Password == password)
+                    return true;
+                else
+                    return false;
+            }
+
+            return false;
         }
     }
 

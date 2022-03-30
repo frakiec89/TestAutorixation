@@ -40,22 +40,29 @@ namespace TestAutorixation.MyWPF
             { MessageBox.Show("введите логин  и пароль"); return; }
 
             IAuthorization authorization = MyBild.GetAuthorization();
-
-           if (authorization.IsLogIn(tbLogin.Text , tbPassword.Text) ==  true )
-           {
-                var user = authorization.GetUser(tbLogin.Text, tbPassword.Text);
-                MessageBox.Show( $"привет {user.Name }");
-
-                //  продолжение 
-
-
-           }
-           else
+            try
             {
-                MessageBox.Show("неверный логин  или пароль");
+                if (authorization.IsLogIn(tbLogin.Text, tbPassword.Text) == true)
+                {
+                    var user = authorization.GetUser(tbLogin.Text, tbPassword.Text);
+                    MessageBox.Show($"привет {user.Name }");
+                    //  продолжение 
+                }
+                else
+                {
+                    MessageBox.Show("неверный логин  или пароль");
+                }
             }
+            catch (Exception ex)
+            {
+                 MessageBox.Show(ex.Message);
+            }
+        }
 
-
+        private void btnReg_Click(object sender, RoutedEventArgs e)
+        {
+            WindowReg windowReg = new WindowReg();
+            windowReg.ShowDialog  ();
         }
     }
 }

@@ -5,18 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TestAutorixation.MyWPF"
         mc:Ignorable="d"
-        Title="Вход" Height="300" Width="200">
+        FontSize="20"
+        Title="Вход" SizeToContent="WidthAndHeight">
     <Grid>
         <StackPanel>
-            <TextBox x:Name="tbLogin" Margin="5"  />
-            <Label >логин</Label>
+            <TextBox x:Name="tbLogin" Margin="5" MinWidth="250"  />
+            <Label Name="labelLogin" HorizontalContentAlignment="Center" >логин</Label>
 
             <TextBox x:Name="tbPassword" Margin="5" />
-            <Label >пароль</Label>
+            <Label Name="labelPassword" HorizontalContentAlignment="Center" >пароль</Label>
 
             <Button MinHeight="75"  x:Name="btnGo"
                     Margin="5"
                     >Вход</Button>
+
+            <Button MinHeight="75"  x:Name="btnReg"
+                    Margin="5" Click="btnReg_Click"
+                    >Регистрация</Button>
+
         </StackPanel>
     </Grid>
 </Window>

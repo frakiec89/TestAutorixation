@@ -1,0 +1,26 @@
+﻿<Window x:Class="TestAutorixation.MyWPF.WindowReg"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestAutorixation.MyWPF"
+        mc:Ignorable="d"
+        Title="Регистрация" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <TextBox x:Name="tbName" Margin="5"  />
+            <Label Name="labelName" >Введите Имя</Label>
+
+            <TextBox x:Name="tbLogin" Margin="5"  />
+            <Label Name="labelLogin" >Введите логин</Label>
+
+            <TextBox x:Name="tbPassword" Margin="5" />
+            <Label Name="labelPassword" >Введите пароль</Label>
+
+            <Button MinHeight="75"  x:Name="btnGo"
+                    Margin="5" Click="btnGo_Click"
+                    >Зарегистрироваться</Button>
+
+        </StackPanel>
+    </Grid>
+</Window>
