@@ -18,5 +18,10 @@ namespace TestAutorixation.MSSQLDB
             return @"Server=192.168.10.134; database=MyTestAutorixationAhtyamov; " +
                   "User id=stud; Password=stud";
         }
+
+
+        // add-migration -project TestAutorixation.MSSQLDB
+        //  update-database -project TestAutorixation.MSSQLDB
+
     }
 }
