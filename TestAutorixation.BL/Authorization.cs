@@ -12,7 +12,8 @@ namespace TestAutorixation.BL
     public class Authorization : IAuthorization
     {
         private IUserContoroller _userContoroller;
-        public Authorization (IUserContoroller userContoroller)
+
+        public Authorization (IUserContoroller userContoroller)//проброс зависимости
         {
             _userContoroller = userContoroller;
         }

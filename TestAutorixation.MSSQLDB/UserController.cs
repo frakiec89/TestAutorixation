@@ -9,8 +9,6 @@ namespace TestAutorixation.MSSQLDB
 {
     public class UserController : IUserContoroller
     {
-        
-
 
         public void AddUser(Core.Model.User user)
         {
@@ -25,6 +23,7 @@ namespace TestAutorixation.MSSQLDB
                msContext.Add(new User { Login = user.Login , Password = user.Password,
                UserName = user.Name
                });
+                msContext.SaveChanges(); // сохранение
             }
             catch (Exception ex)
             {

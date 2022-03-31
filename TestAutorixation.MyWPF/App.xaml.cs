@@ -13,5 +13,6 @@ namespace TestAutorixation.MyWPF
     /// </summary>
     public partial class App : Application
     {
+
     }
 }

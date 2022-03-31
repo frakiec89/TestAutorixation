@@ -9,12 +9,12 @@ namespace TestAutorixation.MyWPF
     {
         internal static IAuthorization GetAuthorization()
         {
-            return new Authorization(GetUserContoroller());
+                return new Authorization(GetUserContoroller() ); // проброс  объекта  базы данных
         }
 
         internal static IUserContoroller GetUserContoroller()
         {
-            return new UserController();
+            return new UserController(); //  база данных 
         }
     }
 }
